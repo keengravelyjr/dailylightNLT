@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Light - Jump to Today</title>
+  <script>
+    const months = [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+
+    const today = new Date();
+    const monthName = months[today.getMonth()];
+    const day = today.getDate(); // no leading zero
+
+    // CHANGE this to your Google Site's public base URL
+    const baseURL = "https://sites.google.com/view/dailylightnlt";
+    
+    // Create the subpage link in Month-Day format
+    const targetURL = `${baseURL}/${monthName}-${day}`;
+
+    // Send visitor there
+    window.location.href = targetURL;
+  </script>
+</head>
+<body>
+  <p>Redirecting to today's reading...</p>
+</body>
+</html>
