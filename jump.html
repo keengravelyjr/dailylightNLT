@@ -13,17 +13,17 @@
     const monthName = months[today.getMonth()];
     const day = today.getDate(); // no leading zero
 
-    // CHANGE this to your Google Site's public base URL
+    // Your published Google Site base URL
     const baseURL = "https://sites.google.com/view/dailylightnlt";
-    
-    // Create the subpage link in Month-Day format
+
+    // Build the target link in Month-Day format
     const targetURL = `${baseURL}/${monthName}-${day}`;
 
-    // Send visitor there
+    // Redirect
     window.location.href = targetURL;
   </script>
 </head>
 <body>
-  <p>Redirecting to today's reading...</p>
+  <p>Redirecting to today's Daily Light reading...</p>
 </body>
 </html>
